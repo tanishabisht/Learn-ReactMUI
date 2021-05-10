@@ -11,6 +11,7 @@ This repository is a mini project on [`Material UI`](https://material-ui.com/get
 - `@material-ui/icons` : to import material UI icons
 - `react-router-dom` : for routing of pages
 - `json-server` : to perform basic CRUD operations using json DB !!
+- `axios` : to fetch APIs
 
 ## Concepts Covered
 - Installing Material UI components : `npm install @material-ui/core`
@@ -18,4 +19,6 @@ This repository is a mini project on [`Material UI`](https://material-ui.com/get
 - [Adding our own custum colors](https://material-ui.com/customization/theming/)
   - Create new theme
   - Provide theme to the components
-- CreateNotes Page : Create form, handle form Validation
+- Create Notes Page : Create form, handle form Validation
+- GET json-server API and display its contents using axios 
+- POST contents from the form to the json-server database, (i.e. json file in data folder)
