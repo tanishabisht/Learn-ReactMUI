@@ -1,9 +1,11 @@
 
 import { useHistory, useLocation } from 'react-router-dom'
-import { Drawer, List, ListItem, ListItemText, ListItemIcon, Typography, Divider } from '@material-ui/core'
+import { Drawer, List, ListItem, ListItemText, ListItemIcon, Typography, AppBar, Toolbar, Avatar } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles'
-import MailIcon from '@material-ui/icons/Mail'
-import InboxIcon from '@material-ui/icons/Inbox'
+import NotesIcon from '@material-ui/icons/Notes'
+import AddCircleOutlineIcon from '@material-ui/icons/AddCircleOutline'
+import CreateIcon from '@material-ui/icons/Create'
+import {format} from 'date-fns'
 
 const drawerWidth = 240
 
@@ -28,6 +30,16 @@ const useStyle = makeStyles(theme => {
         },
         navTitle: {
             padding: theme.spacing(1)
+        },
+        appBar: {
+            width: `calc(100% - ${drawerWidth}px)`
+        },
+        toolbar: theme.mixins.toolbar,
+        date: {
+            flex: 1
+        },
+        avatar: {
+            marginLeft: theme.spacing(2)
         }
     }
 })
@@ -42,19 +54,19 @@ const Layout = ({children}) => {
     const menuItems = [
         {
             text: 'My Notes',
-            icon: <InboxIcon color='primary' />,
+            icon: <NotesIcon color='primary' />,
             path: 'shownotes',
             id:0
         },
         {
             text: 'Create Note',
-            icon: <InboxIcon color='primary' />,
+            icon: <AddCircleOutlineIcon color='primary' />,
             path: 'createnotes',
             id:1
         },
         {
             text: 'Typography',
-            icon: <InboxIcon color='primary' />,
+            icon: <CreateIcon color='primary' />,
             path: 'typography',
             id:2
         }
@@ -62,6 +74,15 @@ const Layout = ({children}) => {
 
     return(
         <div className={classes.root}>
+
+
+        <AppBar className={classes.appBar} elevation={0}>
+            <Toolbar>
+                <Typography className={classes.date}>Today is the {format(new Date(), 'do MMMM Y')}</Typography>
+                <Typography>Tanisha</Typography>
+                <Avatar className={classes.avatar} src='https://picsum.photos/50' />
+            </Toolbar>
+        </AppBar>
 
         <Drawer
             className={classes.drawer}
@@ -84,6 +105,7 @@ const Layout = ({children}) => {
 
 
             <div className={classes.page}>
+                <div className={classes.toolbar}></div>
                 {children}
             </div>
         </div>

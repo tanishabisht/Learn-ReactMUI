@@ -10,8 +10,10 @@ This repository is a mini project on [`Material UI`](https://material-ui.com/get
 - `@material-ui/core` : to import material UI components
 - `@material-ui/icons` : to import material UI icons
 - `react-router-dom` : for routing of pages
-- `json-server` : to perform basic CRUD operations using json DB !!
+- [`json-server`](https://www.npmjs.com/package/json-server) : to perform basic CRUD operations using json DB !!
 - `axios` : to fetch APIs
+- [`date-fns`](https://www.npmjs.com/package/date-fns) : to format date and time
+- [`react-masonry-css`](https://www.npmjs.com/package/react-masonry-css) : simple interface to order items into the desired columns at specified breakpoints
 
 ## Concepts Covered
 - Installing Material UI components : `npm install @material-ui/core`
@@ -20,5 +22,10 @@ This repository is a mini project on [`Material UI`](https://material-ui.com/get
   - Create new theme
   - Provide theme to the components
 - Create Notes Page : Create form, handle form Validation
-- GET json-server API and display its contents using axios 
-- POST contents from the form to the json-server database, (i.e. json file in data folder)
+- Handling CRUD operations using axios 
+  - GET json-server API and display its contents
+  - POST contents from the form to the json-server database, (i.e. json file in data folder)
+- advanced makeStyles
+  - learn how to use js in makeStyles
+  - learn how to use themes values in makeStyles
+- Add Layout for the website : with side drawer and app bar

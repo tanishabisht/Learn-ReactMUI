@@ -67,7 +67,7 @@ const CreateNotes = () => {
                     <RadioGroup name="category" value={category} onChange={e => setCategory(e.target.value)}>
                         <FormControlLabel value="money" control={<Radio color='primary' />} label="Money" />
                         <FormControlLabel value="todos" control={<Radio color='primary' />} label="To Do" />
-                        <FormControlLabel value="reminder" control={<Radio color='primary' />} label="Reminder" />
+                        <FormControlLabel value="reminders" control={<Radio color='primary' />} label="Reminder" />
                         <FormControlLabel value="work" control={<Radio color='primary' />} label="Work" />
                     </RadioGroup>
                 </FormControl>
