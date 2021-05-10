@@ -10,10 +10,12 @@ This repository is a mini project on [`Material UI`](https://material-ui.com/get
 - `@material-ui/core` : to import material UI components
 - `@material-ui/icons` : to import material UI icons
 - `react-router-dom` : for routing of pages
+- `json-server` : to perform basic CRUD operations using json DB !!
 
 ## Concepts Covered
-- Installing Material UI : `npm install @material-ui/core`
+- Installing Material UI components : `npm install @material-ui/core`
 - Created boilerplate : Added routing and pages
 - [Adding our own custum colors](https://material-ui.com/customization/theming/)
   - Create new theme
   - Provide theme to the components
+- CreateNotes Page : Create form, handle form Validation
