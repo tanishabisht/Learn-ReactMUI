@@ -3,6 +3,7 @@ import { purple, green, orange} from '@material-ui/core/colors'
 
 const theme = createMuiTheme({
   palette: {
+    // type: 'dark',
     primary: {
       main: purple[500],
     },

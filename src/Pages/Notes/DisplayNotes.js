@@ -31,10 +31,9 @@ const DisplayNotes = () => {
         default: 3,
         1100: 2,
         700: 1
-    }    
+    }
 
     return(
-
         <Masonry
             breakpointCols={breakpoints}
             className="my-masonry-grid"

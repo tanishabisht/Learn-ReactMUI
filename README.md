@@ -5,6 +5,7 @@ This repository is a mini project on [`Material UI`](https://material-ui.com/get
 
 ## Development server
 - To run the project : `npm start`
+- To run json-server : `json-server --watch data/notes.json --port 8080`
 
 ## Packages used
 - `@material-ui/core` : to import material UI components
@@ -14,6 +15,7 @@ This repository is a mini project on [`Material UI`](https://material-ui.com/get
 - `axios` : to fetch APIs
 - [`date-fns`](https://www.npmjs.com/package/date-fns) : to format date and time
 - [`react-masonry-css`](https://www.npmjs.com/package/react-masonry-css) : simple interface to order items into the desired columns at specified breakpoints
+- [`classnames`](https://www.npmjs.com/package/classnames) : to add multiple classes to a material UI component
 
 ## Concepts Covered
 - Installing Material UI components : `npm install @material-ui/core`
@@ -29,3 +31,4 @@ This repository is a mini project on [`Material UI`](https://material-ui.com/get
   - learn how to use js in makeStyles
   - learn how to use themes values in makeStyles
 - Add Layout for the website : with side drawer and app bar
+- Adding themes : light mode, dark mode
