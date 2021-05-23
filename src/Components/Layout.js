@@ -2,10 +2,14 @@
 import { useHistory, useLocation } from 'react-router-dom'
 import { Drawer, List, ListItem, ListItemText, ListItemIcon, Typography, AppBar, Toolbar, Avatar } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles'
+import {format} from 'date-fns'
+
+// Icons
 import NotesIcon from '@material-ui/icons/Notes'
 import AddCircleOutlineIcon from '@material-ui/icons/AddCircleOutline'
 import CreateIcon from '@material-ui/icons/Create'
-import {format} from 'date-fns'
+import TableChartIcon from '@material-ui/icons/TableChart'
+
 
 const drawerWidth = 240
 
@@ -69,6 +73,12 @@ const Layout = ({children}) => {
             icon: <CreateIcon color='primary' />,
             path: 'typography',
             id:2
+        },
+        {
+            text: 'Table',
+            icon: <TableChartIcon color='primary' />,
+            path: 'table',
+            id:3
         }
     ]
 

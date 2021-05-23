@@ -1,3 +1,6 @@
 export {default as TypographyPage} from './Typography'
 export {default as CreateNotes} from './Notes/CreateNotes'
 export {default as DisplayNotes} from './Notes/DisplayNotes'
+export {default as TablePage} from './Table/TablePage'
+export {default as EnhancedTableHead} from './Table/EnhancedTableHead'
+export {default as EnhancedTableToolbar} from './Table/EnhancedTableToolbar'
