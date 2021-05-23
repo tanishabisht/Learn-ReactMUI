@@ -1,15 +1,32 @@
 import { createMuiTheme } from '@material-ui/core/styles'
-import { purple, green, orange} from '@material-ui/core/colors'
+import { green, orange, purple} from '@material-ui/core/colors'
 
-const theme = createMuiTheme({
+
+
+export const themeDark = createMuiTheme({
   palette: {
-    // type: 'dark',
-    primary: {
-      main: purple[500],
-    },
-    secondary: {
-      main: green[500],
-    },
+      type: 'dark',
+      primary: purple,
+      secondary: green
+  },
+  status: {
+      danger: orange
+  },
+  typography: {
+      fontFamily: 'Quicksand',
+      fontWeightLight: 400,
+      fontWeightRegular: 500,
+      fontWeightMedium: 600,
+      fontWeightBold: 700
+  }
+})
+
+
+export const themeLight = createMuiTheme({
+  palette: {
+    type: 'light',
+    primary: purple,
+    secondary: green
   },
   status: {
     danger: orange
@@ -22,5 +39,3 @@ const theme = createMuiTheme({
     fontWeightBold: 700
   }
 })
-
-export default theme

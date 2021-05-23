@@ -31,4 +31,7 @@ This repository is a mini project on [`Material UI`](https://material-ui.com/get
   - learn how to use js in makeStyles
   - learn how to use themes values in makeStyles
 - Add Layout for the website : with side drawer and app bar
+- [Table manipulation](https://material-ui.com/components/tables/)
+- [Transfer list](https://material-ui.com/components/transfer-list/) content COMPONENT
+- FORM VALIDATION: using [FORMIK](https://formik.org/docs/overview)
 - Adding themes : light mode, dark mode
